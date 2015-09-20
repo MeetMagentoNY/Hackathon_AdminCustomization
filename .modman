@@ -1,0 +1,5 @@
+app/etc/modules/MageNYC_AdminLogo.xml                                               app/etc/modules/MageNYC_AdminLogo.xml
+app/code/community/MageNYC/AdminLogo                                                app/code/community/MageNYC/AdminLogo
+app/design/adminhtml/default/default/layout/magenyc/adminlogo.xml                   app/design/adminhtml/default/default/layout/magenyc/adminlogo.xml
+app/design/adminhtml/default/default/template/magenyc                               app/design/adminhtml/default/default/template/magenyc
+skin/adminhtml/default/default/adminlogo                                            skin/adminhtml/default/default/adminlogo
