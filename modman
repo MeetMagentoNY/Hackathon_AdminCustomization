@@ -3,3 +3,4 @@ app/code/community/MageNYC/AdminLogo                                            
 app/design/adminhtml/default/default/layout/admindesign/admindesign.xml             app/design/adminhtml/default/default/layout/admindesign/admindesign.xml
 app/design/adminhtml/default/default/template/admindesign                           app/design/adminhtml/default/default/template/admindesign
 skin/adminhtml/default/default/admindesign                                          skin/adminhtml/default/default/admindesign
+lib/Varien/Data/Form/Element/Color.php                                              lib/Varien/Data/Form/Element/Color.php
