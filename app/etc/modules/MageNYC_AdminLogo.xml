@@ -4,6 +4,9 @@
         <MageNYC_AdminLogo>
             <active>true</active>
             <codePool>community</codePool>
+            <depends>
+                <Mage_Adminhtml />
+            </depends>
         </MageNYC_AdminLogo>
     </modules>
 </config>

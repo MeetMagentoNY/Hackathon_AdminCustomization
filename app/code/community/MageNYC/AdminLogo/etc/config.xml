@@ -33,7 +33,7 @@
         <layout>
             <updates>
                 <magenyc_adminlogo>
-                    <file>admindesign/adminlogo.xml</file>
+                    <file>admindesign/admindesign.xml</file>
                 </magenyc_adminlogo>
             </updates>
         </layout>

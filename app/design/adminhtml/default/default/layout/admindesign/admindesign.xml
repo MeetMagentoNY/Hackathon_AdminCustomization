@@ -1,9 +1,9 @@
 <layout>
     <default>
         <reference name="head">
-            <action method="addItem">
+            <action method="addItem" ifconfig="admindesign/customcss/usecustomcss">
                 <type>skin_css</type>
-                <name>adminlogo/customheader.css</name>
+                <name>admindesign/css/custom-admindesign.css</name>
             </action>
         </reference>
     </default>

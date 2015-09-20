@@ -19,10 +19,28 @@
             <show_in_website>0</show_in_website>
             <show_in_store>0</show_in_store>
             <groups>
+                <customcss>
+                    <label>Custom CSS</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <usecustomcss>
+                            <label>Use Custom CSS</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>This will add the custom.css to the default admin layout</comment>
+                        </usecustomcss>
+                    </fields>
+                </customcss>
                 <admin_header translate="label" module="magenyc_adminlogo">
-                    <label>Admin Header</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>35</sort_order>
+                    <label>Admin Panel Header</label>
+                    <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>0</show_in_website>
                     <show_in_store>0</show_in_store>
