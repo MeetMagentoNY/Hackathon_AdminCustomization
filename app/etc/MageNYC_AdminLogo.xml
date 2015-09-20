@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageNYC_AdminLogo>
+            <active>true</active>
+            <codePool>community</codePool>
+        </MageNYC_AdminLogo>
+    </modules>
+</config>

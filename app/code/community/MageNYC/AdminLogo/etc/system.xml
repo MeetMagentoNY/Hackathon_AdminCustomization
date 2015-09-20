@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/**
+* @category HD
+* @package Magento
+* @author Bill Andreozzi <billandr@weedmaps.com>
+* @copyright Copyright (c) Ghost Management Group
+*/
+-->
+
+<config>
+    <sections>
+        <design>
+            <groups>
+                <magenyc_adminlogo translate="label" module="magenyc_adminlogo">
+                    <label>Admin Header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>35</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <usecustomheader translate="label">
+                            <label>Use Custom Header</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </usecustomheader>
+                        <logo translate="label">
+                            <label>Logo Image</label>
+                            <comment>Allowed file types: jpg, jpeg, gif, png. To make logo look good on high-resolution displays, upload an image that is 2x normal size and then specify 1x dimensions in width/height fields below.</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_adminlogo</backend_model>
+                            <base_url type="skin" scope_info="0">adminhtml/default/default/adminlogo</base_url>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><usecustomheader>1</usecustomheader></depends>
+                        </logo>
+                        <logo_height>
+                            <label>Logo Height</label>
+                            <comment>Only necessary if image has been uploaded above. Enter number of pixels, without appending "px".</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><usecustomheader>1</usecustomheader></depends>
+                        </logo_height>
+                        <alt translate="label comment">
+                            <label>Custom Admin Logo Alt Text</label>
+                            <comment>If blank we will use store name + 'Logo'</comment>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><usecustomheader>1</usecustomheader></depends>
+                            <sort_order>40</sort_order>
+                        </alt>
+                    </fields>
+                </magenyc_adminlogo>
+            </groups>
+        </design>
+    </sections>
+</config>
