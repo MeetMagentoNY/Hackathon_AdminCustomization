@@ -13,8 +13,7 @@ class MageNYC_AdminLogo_Block_Adminhtml_Page_Header extends Mage_Adminhtml_Block
        }
 
         parent::__construct();
-        // TODO ALLOW USER TO SET TEMPLATES
-        $this->setTemplate('magenyc/custom-header.phtml');
+        $this->setTemplate('admindesign/header.phtml');
     }
 
     public function getHomeLink()
