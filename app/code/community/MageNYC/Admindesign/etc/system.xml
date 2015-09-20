@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-/**
-* @category HD
-* @package Magento
-* @author Bill Andreozzi <billandr@weedmaps.com>
-* @copyright Copyright (c) Ghost Management Group
-*/
--->
-
 <config>
     <sections>
         <admindesign>
@@ -38,7 +29,7 @@
                         </usecustomcss>
                     </fields>
                 </customcss>
-                <admin_header translate="label" module="magenyc_adminlogo">
+                <admin_header translate="label" module="magenyc_admindesign">
                     <label>Admin Panel Header</label>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
@@ -59,7 +50,7 @@
                             <comment>Allowed file types: jpg, jpeg, gif, png. To make logo look good on high-resolution displays, upload an image that is 2x normal size and then specify 1x dimensions in width/height fields below.</comment>
                             <frontend_type>image</frontend_type>
                             <backend_model>adminhtml/system_config_backend_adminlogo</backend_model>
-                            <base_url type="skin" scope_info="0">adminhtml/default/default/adminlogo</base_url>
+                            <base_url type="media" scope_info="0">admindesign/images</base_url>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
@@ -85,7 +76,16 @@
                             <show_in_store>0</show_in_store>
                             <depends><usecustomheader>1</usecustomheader></depends>
                             <sort_order>40</sort_order>
-                        </alt>
+                        </alt>=
+                        <bkg_color translate="label comment">
+                            <label>Admin Header Background Color</label>
+                            <frontend_type>color</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><usecustomheader>1</usecustomheader></depends>
+                            <sort_order>50</sort_order>
+                        </bkg_color>
                     </fields>
                 </admin_header>
             </groups>

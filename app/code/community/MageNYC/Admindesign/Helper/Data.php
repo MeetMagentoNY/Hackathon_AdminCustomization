@@ -6,7 +6,7 @@
 * @copyright Copyright (c) Ghost Management Group
 */
 
-class MageNYC_AdminLogo_Helper_Data extends Mage_Core_Helper_Abstract
+class MageNYC_Admindesign_Helper_Data extends Mage_Core_Helper_Abstract
 {
 
 }

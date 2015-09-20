@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <MageNYC_AdminLogo>
+        <MageNYC_Admindesign>
             <active>true</active>
             <codePool>community</codePool>
             <depends>
                 <Mage_Adminhtml />
             </depends>
-        </MageNYC_AdminLogo>
+        </MageNYC_Admindesign>
     </modules>
 </config>

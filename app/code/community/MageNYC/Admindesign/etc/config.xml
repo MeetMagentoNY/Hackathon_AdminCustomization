@@ -1,30 +1,30 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <MageNYC_AdminLogo>
+        <MageNYC_Admindesign>
             <version>0.1.0</version>
             <depends>
                 <Mage_Adminhtml/>
             </depends>
-        </MageNYC_AdminLogo>
+        </MageNYC_Admindesign>
     </modules>
     <global>
         <blocks>
             <adminhtml>
                 <rewrite>
-                    <page_header>MageNYC_AdminLogo_Block_Adminhtml_Page_Header</page_header>
+                    <page_header>MageNYC_Admindesign_Block_Adminhtml_Page_Header</page_header>
                 </rewrite>
             </adminhtml>
         </blocks>
         <helpers>
-            <magenyc_adminlogo>
-                <class>MageNYC_AdminLogo_Helper</class>
-            </magenyc_adminlogo>
+            <magenyc_admindesign>
+                <class>MageNYC_Admindesign_Helper</class>
+            </magenyc_admindesign>
         </helpers>
         <models>
             <adminhtml>
                 <rewrite>
-                    <system_config_backend_adminlogo>MageNYC_AdminLogo_Model_Adminhtml_System_Config_Backend_Adminlogo</system_config_backend_adminlogo>
+                    <system_config_backend_adminlogo>MageNYC_Admindesign_Model_Adminhtml_System_Config_Backend_Adminlogo</system_config_backend_adminlogo>
                 </rewrite>
             </adminhtml>
         </models>
@@ -32,9 +32,9 @@
     <adminhtml>
         <layout>
             <updates>
-                <magenyc_adminlogo>
+                <magenyc_admindesign>
                     <file>admindesign/admindesign.xml</file>
-                </magenyc_adminlogo>
+                </magenyc_admindesign>
             </updates>
         </layout>
     </adminhtml>

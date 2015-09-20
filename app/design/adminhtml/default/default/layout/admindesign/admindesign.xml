@@ -6,5 +6,8 @@
                 <name>admindesign/css/custom-admindesign.css</name>
             </action>
         </reference>
+        <reference name="header">
+            <block type="core/template" name="inline_css" template="admindesign/inline-css.phtml" before="-" />
+        </reference>
     </default>
 </layout>

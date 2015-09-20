@@ -1,6 +1,6 @@
 <?php
 
-abstract class MageNYC_AdminLogo_Model_Config {
+abstract class MageNYC_Admindesign_Model_Config {
 
   //XML paths for config values
   const USECUSTOMHEADER = 'admindesign/admin_header/usecustomheader';

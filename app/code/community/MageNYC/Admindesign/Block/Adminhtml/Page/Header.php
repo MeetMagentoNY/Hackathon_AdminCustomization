@@ -5,10 +5,10 @@
  * Date: 6/9/15
  * Time: 10:33 PM
  */ 
-class MageNYC_AdminLogo_Block_Adminhtml_Page_Header extends Mage_Adminhtml_Block_Page_Header {
+class MageNYC_Admindesign_Block_Adminhtml_Page_Header extends Mage_Adminhtml_Block_Page_Header {
     public function __construct()
     {
-       if (!Mage::getStoreConfigFlag(MageNYC_AdminLogo_Model_Config::USECUSTOMHEADER)) {
+       if (!Mage::getStoreConfigFlag(MageNYC_Admindesign_Model_Config::USECUSTOMHEADER)) {
             return parent::__construct();
        }
 
@@ -23,22 +23,22 @@ class MageNYC_AdminLogo_Block_Adminhtml_Page_Header extends Mage_Adminhtml_Block
 
     protected function getCustomLogo()
     {
-        $fileName = Mage::getStoreConfig(MageNYC_AdminLogo_Model_Config::CUSTOMLOGO);
+        $fileName = Mage::getStoreConfig(MageNYC_Admindesign_Model_Config::CUSTOMLOGO);
 
         if ($fileName) {
-            $uploadDir = MageNYC_AdminLogo_Model_Adminhtml_System_Config_Backend_Adminlogo::UPLOAD_DIR;
-            $fullFileName = Mage::getBaseDir('skin') . DS . $uploadDir . DS . $fileName;
+            $uploadDir = MageNYC_Admindesign_Model_Adminhtml_System_Config_Backend_Adminlogo::UPLOAD_DIR;
+            $fullFileName = Mage::getBaseDir('media') . DS . $uploadDir . DS . $fileName;
             //Mage::log(sprintf('[%s]([%d]): FullFileName: [%s]',__METHOD__,__LINE__,$fullFileName));
 
             if (file_exists($fullFileName)) {
-                return Mage::getBaseUrl('skin') . $uploadDir . '/' . $fileName;
+                return Mage::getBaseUrl('media') . $uploadDir . '/' . $fileName;
             }
         }
         return Mage::getDesign()->getSkinUrl('images/logo.gif');
     }
     public function _getLogoAlt ()
     {
-        return (bool) Mage::getStoreConfig(MageNYC_AdminLogo_Model_Config::ALTTEXT);
+        return (bool) Mage::getStoreConfig(MageNYC_Admindesign_Model_Config::ALTTEXT);
     }
 
     public function getLogoAlt ()
@@ -46,12 +46,12 @@ class MageNYC_AdminLogo_Block_Adminhtml_Page_Header extends Mage_Adminhtml_Block
         if ( !$this->_getLogoAlt() ) {
             return Mage::app()->getStore()->getName() . 'Logo';
         }
-        return $this->__(Mage::getStoreConfig(MageNYC_AdminLogo_Model_Config::ALTTEXT));
+        return $this->__(Mage::getStoreConfig(MageNYC_Admindesign_Model_Config::ALTTEXT));
     }
 
     public function _getLogoHeight ()
     {
-        return (bool) Mage::getStoreConfig(MageNYC_AdminLogo_Model_Config::LOGOHEIGHT);
+        return (bool) Mage::getStoreConfig(MageNYC_Admindesign_Model_Config::LOGOHEIGHT);
     }
 
     public function getLogoHeight ()
@@ -59,7 +59,7 @@ class MageNYC_AdminLogo_Block_Adminhtml_Page_Header extends Mage_Adminhtml_Block
         if ( !$this->_getLogoHeight() ) {
             return false;
         }
-        return 'height="' . Mage::getStoreConfig(MageNYC_AdminLogo_Model_Config::LOGOHEIGHT) .'" ';
+        return 'height="' . Mage::getStoreConfig(MageNYC_Admindesign_Model_Config::LOGOHEIGHT) .'" ';
     }
 
 
