@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config>
+	<acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+						<children>
+							<config>
+								<children>
+									<admindesign translate="title" module="opc">
+										<title>Admin Design</title>
+										<sort_order>110</sort_order>
+									</admindesign>
+								</children>
+							</config>
+						</children>
+					</system>                    
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
